@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "script-visualizer"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Mikhailov <mikhailov.ivan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "script_visualizer"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gsdc = {git = "https://github.com/IvanMikhailovIMCRAS/gsdc.git"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+mypy = "^1.14.1"
+pytest = "^8.3.4"
+networkx = "^3.4.2"
+matplotlib = "^3.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
